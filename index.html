@@ -1,25 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style.css" />
 </head>
   <body>
-      <div>
-          <input type="text" placeholder="search for a city" id="search"/ >
-          <button id="searchBtn">
-              search
-          </button>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-4" style="background-color: #aaa;">
+            <div class="container">
+            <div class="row">
+                <input id="cityInput" type="text" placeholder="search for a city" id="search"/ >
+                <button id="searchBtn">
+                    search
+                </button>
+            </div>
+            <div class="row">
+                <div>stat1 </div>
+                <div>state 2</div>
+                <div>state 3</div>
+            </div>
+        </div>
+          </div>
+          <div class="col col-8" style="background-color: #fff;">
+            <div class="container-fluid">
+                <div class="row" >
+                    <div class="col-12">
+                    <div id="current">
+                        <h2 id="city">Atlanta <span id="date"></span></h2>
+                        <div><span>TEMP: </span><span id="temp">90F</span></div>
+                        <div id="hum">41%</div>
+                        <div id="wind">4.7 MPH</div>
+                        <div id="uv">9.49</div>                        
+                    </div>
+                </div>
+                </div>
+                
+                <div class="row">
+                    <div id="future">
+                        future
+                    </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
       </div>
+     
       <div>
-          <div id="current">
-              current
-          </div>
-          <div id="future">
-              future
-          </div>
+        
+       
       </div>
 
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="./assets/script.js"></script>
   </body>
 </html>
